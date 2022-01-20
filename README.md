@@ -1,1 +1,2 @@
 # wdio-excercise
+pročitaj me!
