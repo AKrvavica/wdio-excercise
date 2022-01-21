@@ -11,7 +11,24 @@ describe('Testiranje Encryptify Web sjedišta/Projektnog rada', () => {
 
     });
 
-    it('2- Testiranje forme za pretvaranje lozinke', async () => {
+    //it('2- Testiranje forme za pretvaranje lozinke - prazno', async () => {
+
+     //   browser.url('http://localhost/projektnirad/');
+
+     //   const input = await $('input');
+      //  await input.setValue('');
+
+      //  const submitBtn = await $('.w3-button.w3-green.w3-padding-medium.w3-medium');
+       // await submitBtn.click();
+
+      //  const result = await $('.result');
+      //  await expect(result).toHaveTextContaining('Error');
+      //  await browser.pause(3000);
+
+    //});
+
+
+    it('3- Testiranje forme za pretvaranje lozinke', async () => {
 
         browser.url('http://localhost/projektnirad/');
 
@@ -27,7 +44,7 @@ describe('Testiranje Encryptify Web sjedišta/Projektnog rada', () => {
 
     });
 
-    it('3- Testiranje promjene jezika', async () => {
+    it('4- Testiranje promjene jezika', async () => {
 
         browser.url('http://localhost/projektnirad/');
 
@@ -39,7 +56,7 @@ describe('Testiranje Encryptify Web sjedišta/Projektnog rada', () => {
 
     });
 
-    it('4- Testiranje radi li Bulk encrypt stranica', async () => {
+    it('5- Testiranje radi li Bulk encrypt stranica', async () => {
        
         browser.url('http://localhost/projektnirad/');
 
@@ -51,7 +68,37 @@ describe('Testiranje Encryptify Web sjedišta/Projektnog rada', () => {
 
     });
 
-    it('5- Testiranje forme za pretvaranje lozinke', async () => {
+    //it('6- Testiranje forme za pretvaranje lozinke - nepravilno', async () => {
+
+      //  browser.url('http://localhost/projektnirad/bulk.php');
+
+     //   const textArea = await $('textarea');
+      // await textArea.setValue('lozinka1  lozinka2');
+
+     //   const submitBtn = await $('.w3-button.w3-green.w3-padding-medium.w3-medium');
+      //  await submitBtn.click();
+
+      //  const result = await $('.result');
+     //   await expect(result).toHaveTextContaining('Error');
+
+  //  });
+
+    //it('7- Testiranje forme za pretvaranje lozinke - prazno', async () => {
+
+     //   browser.url('http://localhost/projektnirad/bulk.php');
+
+     //   const textArea = await $('textarea');
+     //   await textArea.setValue('');
+
+     //   const submitBtn = await $('.w3-button.w3-green.w3-padding-medium.w3-medium');
+      //  await submitBtn.click();
+
+      //  const result = await $('.result');
+      //  await expect(result).toHaveTextContaining('Error :');
+
+   // });
+
+    it('8- Testiranje forme za pretvaranje lozinke', async () => {
 
         browser.url('http://localhost/projektnirad/bulk.php');
 
@@ -66,7 +113,7 @@ describe('Testiranje Encryptify Web sjedišta/Projektnog rada', () => {
 
     });
 
-    it('6- Testiranje poveznice na Početnu stranicu', async () => {
+    it('9- Testiranje poveznice na Početnu stranicu', async () => {
        
         browser.url('http://localhost/projektnirad/bulk.php');
 
@@ -78,7 +125,7 @@ describe('Testiranje Encryptify Web sjedišta/Projektnog rada', () => {
 
     });
 
-    it('7- Testiranje radi li Stay safe online stranica', async () => {
+    it('10- Testiranje radi li Stay safe online stranica', async () => {
        
         browser.url('http://localhost/projektnirad/bulk.php');
 
@@ -90,7 +137,7 @@ describe('Testiranje Encryptify Web sjedišta/Projektnog rada', () => {
 
     });
 
-    it('8- Testiranje poveznice na Generator stranicu', async () => {
+    it('11- Testiranje poveznice na Generator stranicu', async () => {
        
         browser.url('http://localhost/projektnirad/learn.php');
 
@@ -102,7 +149,7 @@ describe('Testiranje Encryptify Web sjedišta/Projektnog rada', () => {
 
     });
 
-    it('9- Testiranje gumba za Generiranje lozinke', async () => {
+    it('12- Testiranje gumba za Generiranje lozinke', async () => {
        
         browser.url('http://localhost/projektnirad/generator.php');
 
@@ -114,7 +161,7 @@ describe('Testiranje Encryptify Web sjedišta/Projektnog rada', () => {
 
     });
 
-    it('10- Testiranje vanjske poveznice na Generator stranici', async () => {
+    it('13- Testiranje vanjske poveznice na Generator stranici', async () => {
        
         browser.url('http://localhost/projektnirad/generator.php');
 
@@ -126,7 +173,7 @@ describe('Testiranje Encryptify Web sjedišta/Projektnog rada', () => {
 
     });
 
-    it('11- Testiranje provjere snage lozinke - nesigurna lozinka', async () => {
+    it('14- Testiranje provjere snage lozinke - nesigurna lozinka', async () => {
         
         browser.url('http://localhost/projektnirad/');
 
@@ -146,7 +193,7 @@ describe('Testiranje Encryptify Web sjedišta/Projektnog rada', () => {
 
     });
 
-    it('12- Testiranje provjere snage lozinke - sigurna lozinka', async () => {
+    it('15- Testiranje provjere snage lozinke - sigurna lozinka', async () => {
         
         browser.url('http://localhost/projektnirad/checker.php/');
 
@@ -163,7 +210,7 @@ describe('Testiranje Encryptify Web sjedišta/Projektnog rada', () => {
 
     });
 
-    it('13- Navigacija - vodi li klik na logo na početnu stranicu', async () => {
+    it('16- Navigacija - vodi li klik na logo na početnu stranicu', async () => {
         
         browser.url('http://localhost/projektnirad/checker.php');
 
@@ -175,7 +222,7 @@ describe('Testiranje Encryptify Web sjedišta/Projektnog rada', () => {
 
     });
 
-    it('14- Responzivnost stranice', async () => {
+    it('17- Responzivnost stranice', async () => {
         
         browser.url('http://localhost/projektnirad/');
         browser.setWindowSize(390, 844);
