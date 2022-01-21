@@ -1,2 +1,4 @@
 # wdio-excercise
-pročitaj me!
+
+Testiranje Encryptify Web sjedišta/Projektnog rada
+
